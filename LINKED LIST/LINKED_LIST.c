@@ -248,6 +248,29 @@ List Intersection(List L1, List L2)
 }
 
 
+//TRA VE TAP HOP HOP CUA HAI LIST L1 VA L2
+List Union(List L1, List L2)
+{
+    List L;
+    makeNull(&L);
+    Position temp1 = L1;
+    Position temp2 = L2;
+    while (temp1->Next != NULL && temp2->Next != NULL)
+        {
+            if (!Member(temp1->Next->Data, L))
+                {
+                   Insert(temp1->Next->Data, EndList(L));
+                }
+            if (!Member(temp2->Next->Data, L))
+                {
+                   Insert(temp2->Next->Data, EndList(L));
+                }
+            if(temp1->Next != NULL) temp1 = temp1->Next;
+            if(temp2->Next != NULL) temp2 = temp2->Next;
+        }
+    return L;
+}
+
 // CHUONG TRINH CHINH
 int main()
 {
@@ -259,7 +282,7 @@ int main()
     Input(&L2);
     Output(L1);
     Output(L2);
-    KQ = Intersection(L1, L2);
+    KQ = Union(L1, L2);
     Output(KQ);
     return 0;
 }
