@@ -271,6 +271,22 @@ List Union(List L1, List L2)
     return L;
 }
 
+List Difference(List L1, List L2)
+{
+    List L;
+    makeNull(&L);
+    Position temp1 = L1;
+    while (temp1->Next != NULL)
+    {
+        if (!Member(temp1->Next->Data, L) && !Member(temp1->Next->Data, L2))
+        {
+            Insert(temp1->Next->Data, EndList(L));
+        }
+        temp1 = temp1->Next;
+    }
+return L;
+}
+
 // CHUONG TRINH CHINH
 int main()
 {
@@ -282,7 +298,7 @@ int main()
     Input(&L2);
     Output(L1);
     Output(L2);
-    KQ = Union(L1, L2);
+    KQ = Difference(L1, L2);
     Output(KQ);
     return 0;
 }
