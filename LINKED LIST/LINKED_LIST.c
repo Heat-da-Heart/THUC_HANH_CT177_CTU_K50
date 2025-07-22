@@ -26,6 +26,7 @@ void makeNull(List* pN)
 
 
 //TRA VE PHAN TU CUOI CUNG
+//TRA VE DIA CHI CUA MOT NODE LA NODE CUOI CUNG TRONG DANH SACH L
 Position EndList(List L)
 {
     Position P;
@@ -85,7 +86,10 @@ void deleteList(Position P, List* pL)
 }
 
 
-// CHEN PHAN TU X VAO VI TRI P TRONG LIST
+// CHEN PHAN TU X VAO VI TRI P (VI TRI P O DAY LA MOT DIA CHI CUA NODE) TRONG LIST 
+// O DAY TA CAN DIA CHI CUA MOT NODE MOI CO THE CHEN DUOC
+// VIEC CHEN VAO LIST NAO PHU THUOC VAO DIA CHI CUA NODE NAM TRONG LIST DO
+// VIEC KET HOP VOI HAM EndList(L) O TREN CHO PHEP TA CHEN x VAO VI TRI CUOI CUNG TRONG DANH SACH L
 void Insert(ElementType x, Position P)
 {
     Position temp;
@@ -229,7 +233,7 @@ bool Member(ElementType X, List L)
 }
 
 
-//TRA VE TAP HOP GIAO CUA HAI LIST L1 VA L2
+//TRA VE TAP HOP L LA GIAO CUA HAI LIST L1 VA L2
 List Intersection(List L1, List L2)
 {
     List L;
@@ -248,7 +252,7 @@ List Intersection(List L1, List L2)
 }
 
 
-//TRA VE TAP HOP HOP CUA HAI LIST L1 VA L2
+//TRA VE TAP HOP L LA HOP CUA HAI LIST L1 VA L2
 List Union(List L1, List L2)
 {
     List L;
@@ -271,6 +275,8 @@ List Union(List L1, List L2)
     return L;
 }
 
+
+//TRA VE MOT TAP HOP L LA HIEU CUA TAP HOP L1 VA L2
 List Difference(List L1, List L2)
 {
     List L;
