@@ -29,14 +29,11 @@ void makeNull(List* pN)
 Position EndList(List L)
 {
     Position P;
-
     P = L;
-
     while (P->Next != NULL)
     {
         P = P->Next;
     }
-
     return P;
 }
 
@@ -66,13 +63,11 @@ ElementType Retrieve(Position P, List L)
 Position Locate(ElementType x, List L)
 {
     Position T = L;
-
     while (T->Next != NULL)
     {
         if(T->Next->Data == x) return T;
         T = T->Next;
     }
-
     return T->Next;
 }
 
@@ -81,7 +76,6 @@ Position Locate(ElementType x, List L)
 void deleteList(Position P, List* pL)
 {
     Position T;
-
     if (P->Next != NULL)
     {
         T = P->Next;
@@ -96,7 +90,6 @@ void Insert(ElementType x, Position P)
 {
     Position temp;
     temp = (Node*)malloc(sizeof(Node));
-
     temp->Data = x;
     temp->Next = P->Next;
     P->Next = temp;
@@ -107,9 +100,7 @@ void Insert(ElementType x, Position P)
 void Input(List* pL)
 {
     ElementType n, x;
-
     scanf("%d", &n);
-
     for (int i = 0; i < n; i++)
     {
         scanf("%d", &x);
@@ -122,13 +113,11 @@ void Input(List* pL)
 void Output(List L)
 {
     Position T = L->Next;
-
     while(T != NULL)
     {
         printf("%d ", T->Data);
         T = T->Next;
     }
-
     printf("\n");
 }
 
@@ -173,7 +162,6 @@ void Odd(List L)
 void Even(List L)
 {
     Position temp = L;
-
     while(temp->Next != NULL)
     {
         if (Retrieve(temp, L) % 2 == 0) printf("%d ", Retrieve(temp, L));
@@ -188,7 +176,6 @@ float Averange(List L)
 {
     int S = 0, count = 0;
     Position temp = L;
-
     while(temp->Next != NULL)
     {
             S += Retrieve(temp, L);
@@ -228,19 +215,51 @@ void deleteAll(ElementType x, List* pL)
     }
 }
 
+
+//KIEM TRA X CO NAM TRONG LIST L HAY KHONG
+bool Member(ElementType X, List L)
+{
+    Position temp = L;
+    while (temp->Next != NULL)
+        {
+            if (temp->Next->Data == X) return 1;
+            temp = temp->Next;
+        }
+    return 0;
+}
+
+
+//TRA VE TAP HOP GIAO CUA HAI LIST L1 VA L2
+List Intersection(List L1, List L2)
+{
+    List L;
+    makeNull(&L);
+    Position temp = L1;
+    while (temp->Next != NULL)
+        {
+            if (Member(temp->Next->Data, L2) && !Member(temp->Next->Data, L))
+                {
+                   Insert(temp->Next->Data, EndList(L));
+                   
+                }
+            temp = temp->Next;
+        }
+    return L;
+}
+
+
 // CHUONG TRINH CHINH
 int main()
 {
-    ElementType x;
-    List L;
-
-    makeNull(&L);
-    Input(&L);
-    Output(L);
-    scanf("%d", &x);
-    deleteAll(x, &L);
-    Output(L);
-
-
+    List L1, L2, KQ;
+    makeNull(&L1);
+    makeNull(&L2);
+    makeNull(&KQ);
+    Input(&L1);
+    Input(&L2);
+    Output(L1);
+    Output(L2);
+    KQ = Intersection(L1, L2);
+    Output(KQ);
     return 0;
 }
