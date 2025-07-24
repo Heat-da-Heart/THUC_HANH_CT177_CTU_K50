@@ -36,6 +36,7 @@ ________________________________________________________________________________
 ## LƯU Ý:
 Ở TRƯỜNG HỢP NÀY, MỘT DANH SÁCH BIỂU DIỄN TẬP HỢP ĐƯỢC HIỂU LÀ MỘT DANH SÁCH MÀ Ở ĐÓ KHÔNG CÓ HAI PHẦN TỬ NÀO TRÙNG NHAU.
 TA CÓ THỂ BIỂU DIỄN MỘT TẬP HỢP BẰNG MỘT DANH SÁCH VÀ XỬ LÍ NHỮNG PHẦN TỬ TRÙNG NHAU BẰNG HÀM Ở CÂU 7.
+
 *GỢI Ý: NÊN TẠO MỘT HÀM ĐỂ KIỂM TRA MỘT PHẦN TỬ X CÓ NẰM TRONG MỘT DANH SÁCH L HAY KHÔNG. TỪ VIỆC SỬ DỤNG HÀM TRÊN RÚT RA CÁCH GIẢI QUYẾT CÂU 8, 9, 10.*
 
 ### CODE XEM FILE LINKED_LIST.c VÀ TÌM THEO TÊN CÁC HÀM SAU:
