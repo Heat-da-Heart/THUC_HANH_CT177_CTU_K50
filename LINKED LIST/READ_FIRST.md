@@ -13,16 +13,16 @@ typedef Position List;
 ________________________________________________________________________________________________________
 ## PHẦN BÀI TẬP
 
-*Câu 1: Viết hàm nhập và hiển thị một danh sách các số nguyên từ bàn phím.
-Câu 2: Viết hàm xoá phần tử x xuất hiện đầu tiên trong danh sách.
-Câu 3: Viết hàm sắp xếp danh sách tăng dần.
-Câu 4: Viết hàm liệt kê các số lẻ và số chẵn có trong danh sách.
-Câu 5: Viết hàm tính trung bình cộng các phần tử trong danh sách.
-Câu 6: Viết hàm cho phép liệt kê các số chẵn và tính trung bình cộng các phần tử là số chẵn trong danh sách. 
-Câu 7: Viết hàm xóa tất cả phần tử x xuất hiện trong danh sách.
-Câu 8: Viết hàm cho phép tìm tập hợp giao của 2 danh sách biểu diễn tập hợp.
-Câu 9: Viết hàm cho phép tìm tập hợp hợp của 2 danh sách biểu diễn tập hợp.
-Câu 10: Viết hàm cho phép tìm hiệu của 2 danh sách biểu diễn tập hợp.
+*Câu 1: Viết hàm nhập và hiển thị một danh sách các số nguyên từ bàn phím.*
+*Câu 2: Viết hàm xoá phần tử x xuất hiện đầu tiên trong danh sách.*
+*Câu 3: Viết hàm sắp xếp danh sách tăng dần.*
+*Câu 4: Viết hàm liệt kê các số lẻ và số chẵn có trong danh sách.*
+*Câu 5: Viết hàm tính trung bình cộng các phần tử trong danh sách.*
+*Câu 6: Viết hàm cho phép liệt kê các số chẵn và tính trung bình cộng các phần tử là số chẵn trong danh sách.*
+*Câu 7: Viết hàm xóa tất cả phần tử x xuất hiện trong danh sách.*
+*Câu 8: Viết hàm cho phép tìm tập hợp giao của 2 danh sách biểu diễn tập hợp.*
+*Câu 9: Viết hàm cho phép tìm tập hợp hợp của 2 danh sách biểu diễn tập hợp.*
+*Câu 10: Viết hàm cho phép tìm hiệu của 2 danh sách biểu diễn tập hợp.*
 
 LƯU Ý:
 // Ở TRƯỜNG HỢP NÀY, MỘT DANH SÁCH BIỂU DIỄN TẬP HỢP ĐƯỢC HIỂU LÀ MỘT DANH SÁCH MÀ Ở ĐÓ KHÔNG CÓ HAI PHẦN TỬ NÀO TRÙNG NHAU.
