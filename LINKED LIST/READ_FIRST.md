@@ -1,5 +1,5 @@
-KHAI BÁO CẤU TRÚC DANH SÁCH LIÊN KẾT
-
+# KHAI BÁO CẤU TRÚC DANH SÁCH LIÊN KẾT
+```c
 typedef struct Node
 {
   int Data;
@@ -9,11 +9,11 @@ typedef struct Node
 typedef struct Node* Position;
 
 typedef Position List;
-
+```
 ________________________________________________________________________________________________________
-PHẦN BÀI TẬP
+## PHẦN BÀI TẬP
 
-Câu 1: Viết hàm nhập và hiển thị một danh sách các số nguyên từ bàn phím.
+*Câu 1: Viết hàm nhập và hiển thị một danh sách các số nguyên từ bàn phím.
 Câu 2: Viết hàm xoá phần tử x xuất hiện đầu tiên trong danh sách.
 Câu 3: Viết hàm sắp xếp danh sách tăng dần.
 Câu 4: Viết hàm liệt kê các số lẻ và số chẵn có trong danh sách.
