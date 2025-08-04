@@ -157,11 +157,12 @@ Given this, the following precedence table is a simplest solution:
 
  
   	Precedence
-Operator 	Stack 	Input
-) 	N/A 	0
-( 	0 	5
-+,- 	2 	1
-*,/ 	4 	3
+| Operator | Stack 	| Input |
+| :------: | :----: | :---: |
+|    ) 	   | N/A 	  |  0    |
+|    ( 	   | 0 	    |  5    |
+|    +,- 	 | 2 	    |  1    |
+|    *,/ 	 | 4 	    |  3    |
 
 
 
