@@ -179,7 +179,7 @@ The Algorithm
     Step 7: Go to Step 1.
     Finished.
 
-
+```
 Infix to Postfix Example: 5*(4-2+2)-6/3
 
 Action: Initialize
@@ -324,7 +324,7 @@ Stack: <empty>
 The stack is empty.
 The input is empty.
 We've terminated in a normal way; the output is the input expresses as a postfix expression.
-
+```
  
 Prefix Notation
 
