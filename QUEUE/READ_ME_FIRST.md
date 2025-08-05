@@ -41,3 +41,35 @@ For example:
 |3     |  5     |
 |3 2 1 |        |
 |1 3 2 |        |
+
+------------------------------------------------------------------------------------------------------------------------------
+######## (**SPOILER ALERT**)
+Còn tiếp
+ ||
+ ||
+ ||
+ ||
+\  /
+ \/
+
+
+
+
+
+
+######## (**SPOILER ALERT**)
+____________________________________________________________________________________________________________________
+*GỢI Ý LỜI GIẢI* :
+
+-> Viết các phép toán chuẩn trên Queue
+
+-> Tạo Queue Task là các công việc cần thực hiện và Queue Prioritize là độ ưu tiên (Ở đây dùng Mảng cũng được vì ta sẽ không thay đổi quá nhiều Queue này trừ việc deQueue)
+
+-> Thực hiện lặp cho tới khi Queue Task không còn phần tử nào
+{
+    1. Gọi X là giá trị đầu hàng của Queue Task và Y là giá trị đầu hàng của Queue Prioritize
+    2. Nếu X == Y thì deQueue cả hai hàng, tăng đếm, ngược lại deQueue Queue Task và tiến hành enQueue X vào chính Queue Task trở lại và tăng đếm.
+    -> Việc này là thao tác trên ví dụ (cụ thể là lấy giá trị đầu hàng và đưa vào cuối hàng);
+}
+
+-> Xuất count;
