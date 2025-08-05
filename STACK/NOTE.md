@@ -33,7 +33,7 @@ maybe on a calculator display?
 This is called postfix notation, because the operator comes after its operands.
 _____________________________________________________________________________________________________
 
-##### Postfix Notation
+### Postfix Notation
 -----------------------------------------------------------------------------------------------------
 When expressions get more complicated, parentheses come into play. For instance, take the expression
 
