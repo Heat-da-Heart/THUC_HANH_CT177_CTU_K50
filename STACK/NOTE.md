@@ -1,9 +1,9 @@
 # ĐÂY LÀ NOTE TÌM ĐƯỢC TRÊN MẠNG CÓ NÓI VỀ ỨNG DỤNG CỦA STACK
 ## Ở PHẦN CUỐI CÓ ĐỀ CẬP ỨNG DỤNG STACK ĐỂ CHUYỂN BIỂU THỨC TRUNG TỐ THÀNH BIỂU THỨC HẬU TỐ
------------------------------------------------------------------------------------------------------
+
 
  #### Lecture 11
-
+-----------------------------------------------------------------------------------------------------
     Applications using Stacks
     Postfix Notation
     Converting from Infix to Prefix by Hand
@@ -11,9 +11,9 @@
     Implementing Infix Notation With Stacks
     Converting from Infix to Postfix Using a Stack
     Prefix Notation
------------------------------------------------------------------------------------------------------
+_____________________________________________________________________________________________________
 ##### Applications using Stacks
-
+-----------------------------------------------------------------------------------------------------
 To help you to gain a clear understanding of how stacks work, we'll apply stacks to the pursuit of evaluating arithmetic expressions.
 
 I'm sure that the following expression looks familiar to you.
@@ -31,10 +31,10 @@ But have you ever seen the same expression written this way?
 maybe on a calculator display?
 
 This is called postfix notation, because the operator comes after its operands.
------------------------------------------------------------------------------------------------------
+_____________________________________________________________________________________________________
 
 ##### Postfix Notation
-
+-----------------------------------------------------------------------------------------------------
 When expressions get more complicated, parentheses come into play. For instance, take the expression
 
 (3 + 6) * (2 - 4) + 7.
@@ -70,10 +70,11 @@ Work through the postfix expression from left to right. Every time you encounter
 What's so great about postfix notation? As you can see, it eliminates all parentheses. Postfix notation is used in some applications because it saves on memory. After a few times of looking at postfix notation, it becomes easier to read.
 
 So how do you convert an infix expression to a postfix expression?
------------------------------------------------------------------------------------------------------
+_____________________________________________________________________________________________________
+
 
 ##### Converting from Infix Notation to Postfix Notation by Hand
-
+-----------------------------------------------------------------------------------------------------
 Converting an expression from infix to postfix is easy.
 
 The first thing you need to do is fully parenthesize the expression.
@@ -99,10 +100,11 @@ becomes
 Take a close look at the arrowheads. To convert an infix expression to postfix, you simply place each operator in the infix expression immediately to the right of its respective right parenthesis. Then you rewrite the expression in the new order, and what you get is the same expression in prefix notation.
 
 Try converting some infix expressions of your own into prefix notation. As you can see, it's easy to do.
------------------------------------------------------------------------------------------------------
+
+________________________________________________________________________________________________________
 
 ##### Implementing Postfix Notation With a Stack
-
+-----------------------------------------------------------------------------------------------------
 One beautiful thing about postfix notation is that it is easily implemented in programming by using a stack. Here's how to do it.
 
 Read in one symbol at a time from the postfix expression.
@@ -121,9 +123,10 @@ Very Important:
 The first element you pop off of the stack in an operation should be evaluated on the right-hand side of the operator. For multiplication and addition, order doesn't matter, but for subtraction and division, your answer will  be incorrect if you switch your operands around.
 
  Step through this example. By the end of it, it will be clear to you how a stack can easily evaluate a postfix expression. Here, we use a stack to evaluate the expression 4 5 + 9 * 3 + 3 /.
------------------------------------------------------------------------------------------------------
+____________________________________________________________________________________________________
 
 ##### Implementing Infix Notation With Stacks
+-----------------------------------------------------------------------------------------------------
 
 Implementing infix notation with stacks is substantially more difficult.
 
@@ -138,10 +141,10 @@ When you encounter a closed parenthesis,
     Once again, you want to push the result back onto the operand stack.
 
 As you can see, this is much more complicated than using a stack to evaluate a postfix expression.
------------------------------------------------------------------------------------------------------
+____________________________________________________________________________________________________
  
 ##### Converting Infix to Postfix Using a Stack
-
+-----------------------------------------------------------------------------------------------------
 Now we'll tackle the task of converting an infix expression to a postfix expression using a single stack. This approach will work with any infix expression - fully parenthesized or not. The results are suitable for evaluation using a single stack.
 
 Here's the big picture:
@@ -179,7 +182,7 @@ Given this, the following precedence table is a simplest solution:
 
 
 
-The Algorithm
+#### **The Algorithm**
 
  
 
@@ -339,10 +342,10 @@ The stack is empty.
 The input is empty.
 We've terminated in a normal way; the output is the input expresses as a postfix expression.
 ```
------------------------------------------------------------------------------------------------------
+___________________________________________________________________________________________________
 
 ##### Prefix Notation
-
+-----------------------------------------------------------------------------------------------------
 Prefix notation is just the opposite of postfix; the operators go before the operands. So, to convert to prefix, all you do is once again fully parenthesize the infix expression, and then move all of the operators to the immediate left of the left parentheses.
-
+_____________________________________________________________________________________________________________
 //NGUỒN:https://www.andrew.cmu.edu/course/15-200/s06/applications/ln/junk.html
