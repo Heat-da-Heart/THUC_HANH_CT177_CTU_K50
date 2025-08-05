@@ -37,6 +37,7 @@ Có 3 công việc, danh sách 1 là 3 2 1; danh sách 2 là 1 3 2. Các bước
 For example:
 
 |Input |  Result|
+|---------------|
 |3     |  5     |
 |3 2 1 |        |
 |1 3 2 |        |
