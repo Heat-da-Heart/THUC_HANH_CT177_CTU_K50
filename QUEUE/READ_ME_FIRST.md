@@ -76,3 +76,7 @@ ________________________________________________________________________________
 }
 
 -> Xuất count;
+
+-> CODE xem File Learn_Queue_From_Example.c
+
+Trong file này các phép toán chuẩn đã được cài sẵn, có thể không tối ưu nhất, song chương trình vẫn chạy đúng một số trường hợp nhất định !
