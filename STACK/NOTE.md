@@ -2,7 +2,7 @@
 ## Ở PHẦN CUỐI CÓ ĐỀ CẬP ỨNG DỤNG STACK ĐỂ CHUYỂN BIỂU THỨC TRUNG TỐ THÀNH BIỂU THỨC HẬU TỐ
 
 
- #### Lecture 11
+ ## Lecture 11
 -----------------------------------------------------------------------------------------------------
     Applications using Stacks
     Postfix Notation
@@ -12,7 +12,7 @@
     Converting from Infix to Postfix Using a Stack
     Prefix Notation
 _____________________________________________________________________________________________________
-##### Applications using Stacks
+### Applications using Stacks
 -----------------------------------------------------------------------------------------------------
 To help you to gain a clear understanding of how stacks work, we'll apply stacks to the pursuit of evaluating arithmetic expressions.
 
@@ -73,7 +73,7 @@ So how do you convert an infix expression to a postfix expression?
 _____________________________________________________________________________________________________
 
 
-##### Converting from Infix Notation to Postfix Notation by Hand
+### Converting from Infix Notation to Postfix Notation by Hand
 -----------------------------------------------------------------------------------------------------
 Converting an expression from infix to postfix is easy.
 
@@ -103,7 +103,7 @@ Try converting some infix expressions of your own into prefix notation. As you c
 
 ________________________________________________________________________________________________________
 
-##### Implementing Postfix Notation With a Stack
+### Implementing Postfix Notation With a Stack
 -----------------------------------------------------------------------------------------------------
 One beautiful thing about postfix notation is that it is easily implemented in programming by using a stack. Here's how to do it.
 
@@ -125,7 +125,7 @@ The first element you pop off of the stack in an operation should be evaluated o
  Step through this example. By the end of it, it will be clear to you how a stack can easily evaluate a postfix expression. Here, we use a stack to evaluate the expression 4 5 + 9 * 3 + 3 /.
 ____________________________________________________________________________________________________
 
-##### Implementing Infix Notation With Stacks
+### Implementing Infix Notation With Stacks
 -----------------------------------------------------------------------------------------------------
 
 Implementing infix notation with stacks is substantially more difficult.
@@ -143,7 +143,7 @@ When you encounter a closed parenthesis,
 As you can see, this is much more complicated than using a stack to evaluate a postfix expression.
 ____________________________________________________________________________________________________
  
-##### Converting Infix to Postfix Using a Stack
+### Converting Infix to Postfix Using a Stack
 -----------------------------------------------------------------------------------------------------
 Now we'll tackle the task of converting an infix expression to a postfix expression using a single stack. This approach will work with any infix expression - fully parenthesized or not. The results are suitable for evaluation using a single stack.
 
@@ -344,7 +344,7 @@ We've terminated in a normal way; the output is the input expresses as a postfix
 ```
 ___________________________________________________________________________________________________
 
-##### Prefix Notation
+### Prefix Notation
 -----------------------------------------------------------------------------------------------------
 Prefix notation is just the opposite of postfix; the operators go before the operands. So, to convert to prefix, all you do is once again fully parenthesize the infix expression, and then move all of the operators to the immediate left of the left parentheses.
 _____________________________________________________________________________________________________________
