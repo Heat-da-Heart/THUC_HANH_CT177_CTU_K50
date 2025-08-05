@@ -1,5 +1,5 @@
 # ĐÂY LÀ NOTE TÌM ĐƯỢC TRÊN MẠNG CÓ NÓI VỀ ỨNG DỤNG CỦA STACK
-## Ở PHẦN CUỐI CÓ ĐỀ CẬP ỨNG DỤNG STACK ĐỂ CHUYỂN BIỂU THỨC TRUNG TỐ THÀNH BIỂU THỨC HẬU TỐ
+##### *Ở PHẦN CUỐI CÓ ĐỀ CẬP ỨNG DỤNG STACK ĐỂ CHUYỂN BIỂU THỨC TRUNG TỐ THÀNH BIỂU THỨC HẬU TỐ*
 
 
  ## Lecture 11
