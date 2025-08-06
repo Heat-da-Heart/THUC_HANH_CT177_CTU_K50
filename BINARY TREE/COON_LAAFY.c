@@ -166,7 +166,32 @@ Tree getNext(int X, Tree T)
     }
     return Next;
 }
-
+int deleteMin(Tree* pT)
+{
+    int K;
+    if ((*pT)->Left == NULL)
+    {
+        K = (*pT)->Key;
+        (*pT) = (*pT)->Right;
+        return K;
+    } else return deleteMin(&((*pT)->Left));
+}
+//#13
+void deleteNode(int X, Tree* pT)
+{
+    if (*pT != NULL) 
+    {
+        if (X < (*pT)->Key) deleteNode(X, &((*pT)->Left));
+        else if (X > (*pT)->Key) deleteNode(X, &((*pT)->Right));
+        else 
+        {
+            if ((*pT)->Left == NULL && (*pT)->Right == NULL) (*pT) = NULL;
+            else if ((*pT)->Left == NULL) (*pT) = (*pT)->Right;
+            else if ((*pT)->Right == NULL) (*pT) = (*pT)->Left;
+            else (*pT)->Key = deleteMin(&((*pT)->Right));
+        }
+    }
+}
 //#14 & #15
 int Max(int A, int B)
 {
