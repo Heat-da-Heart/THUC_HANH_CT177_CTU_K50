@@ -112,6 +112,33 @@ void printPath(int X, Tree T)
     if (found == 0) printf("%d -> Khong thay", tmp->Key);
 } 
 
+Tree GetMax(Tree T)
+{
+	while (T->Right != NULL) T = T->Right;
+	return T;
+}
+
+Tree getPrevious(int X, Tree T)
+{
+	if (T == NULL) return NULL;
+	Tree prev = NULL;
+	while (T != NULL)
+	{
+		if (T->Key > X) T = T->Left;
+		else if (T->Key < X) 
+		{
+			prev = T;
+			T = T->Right;
+		} 
+		else 
+		{
+		        if (T->Left != NULL) prev = GetMax(T->Left);
+				break;
+		}
+	}
+	return prev;
+}
+
 int main()
 {
     Tree T=NULL;
