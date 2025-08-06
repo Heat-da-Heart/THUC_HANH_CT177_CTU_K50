@@ -11,4 +11,4 @@ struct Node
 };
 typedef struct Node* Tree; 
 ```
-*CÂU 1: Viết hàm khởi tạo và trả về một cây rỗng.*
+
