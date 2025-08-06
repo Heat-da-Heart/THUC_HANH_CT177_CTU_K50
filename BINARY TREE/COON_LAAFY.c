@@ -138,6 +138,35 @@ Tree getPrevious(int X, Tree T)
 	}
 	return prev;
 }
+//#12
+Tree getMin(Tree T)
+{
+    Tree tmp = T;
+    while (tmp->Left != NULL)
+    {
+        tmp = tmp->Left;
+    }
+    return tmp;
+}
+
+Tree getNext(int X, Tree T)
+{
+    Tree tmp = searchNode(X, T);
+    if (tmp->Right != NULL) return getMin(tmp->Right);
+    Tree Next = NULL;
+    Tree Dummy = T;
+    while (Dummy != NULL)
+    {
+        if (Dummy->Key > X)
+        {
+            Next = Dummy;
+            Dummy = Dummy->Left;
+        } else if (Dummy->Key < X) Dummy = Dummy->Right;
+        else break;
+    }
+    return Next;
+}
+
 //#14 & #15
 int Max(int A, int B)
 {
