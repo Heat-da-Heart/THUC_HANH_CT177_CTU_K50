@@ -111,7 +111,7 @@ void printPath(int X, Tree T)
     if (found == 1) printf("%d -> Tim thay", tmp->Key);
     if (found == 0) printf("%d -> Khong thay", tmp->Key);
 } 
-//#11
+//#11 THE ALGORITHMS FOR P11 https://www.enjoyalgorithms.com/blog/inorder-predecessor-binary-search-tree
 Tree GetMax(Tree T)
 {
 	while (T->Right != NULL) T = T->Right;
