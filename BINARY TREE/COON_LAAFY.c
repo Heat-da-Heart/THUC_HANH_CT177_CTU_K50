@@ -10,18 +10,18 @@ struct Node
 };
 
 typedef struct Node* Tree;
-
+//#1
 Tree initTree()
 {
     Tree T = NULL;
     return T;
 }
-
+//#2
 bool isEmpty(Tree T)
 {
     return T == NULL;
 }
-
+//#3
 void insertNode(int X, Tree* pT)
 {
     if ((*pT) == NULL)
@@ -34,7 +34,7 @@ void insertNode(int X, Tree* pT)
     } else if (X < (*pT)->Key) insertNode(X, &((*pT)->Left));
     else if (X > (*pT)->Key) insertNode(X, &((*pT)->Right));
 }
-
+//#4
 void preOrder(Tree T)
 {
     if (T != NULL)
@@ -44,7 +44,7 @@ void preOrder(Tree T)
         preOrder(T->Right);
     }
 }
-
+//#5
 void inOrder(Tree T)
 {
     if (T != NULL)
@@ -54,7 +54,7 @@ void inOrder(Tree T)
         inOrder(T->Right);
     }
 }
-
+//#6
 void posOrder(Tree T)
 {
     if (T != NULL)
@@ -64,7 +64,7 @@ void posOrder(Tree T)
         printf("%d ", T->Key);
     }
 }
-
+//#7
 Tree searchNode(int X, Tree T)
 {
     if (T == NULL) return NULL;
@@ -72,7 +72,7 @@ Tree searchNode(int X, Tree T)
     else if (X > T->Key) return searchNode(X, T->Right);
     return T;
 }
-
+//#8
 Tree getParent(int X, Tree T)
 {   
     
@@ -82,14 +82,14 @@ Tree getParent(int X, Tree T)
     if (X > T->Key && T->Right != NULL) return getParent(X, T->Right);
     return NULL;
 }
-
+//#9
 Tree rightSibling(int X, Tree T)
 {
     Tree tmp = getParent(X, T);
     if (tmp == NULL || tmp->Right == NULL || tmp->Right->Key == X) return NULL;
     return tmp->Right;
 }
-
+//#10
 void printPath(int X, Tree T)
 {
     Tree tmp = T;
@@ -111,7 +111,7 @@ void printPath(int X, Tree T)
     if (found == 1) printf("%d -> Tim thay", tmp->Key);
     if (found == 0) printf("%d -> Khong thay", tmp->Key);
 } 
-
+//#11
 Tree GetMax(Tree T)
 {
 	while (T->Right != NULL) T = T->Right;
@@ -137,6 +137,27 @@ Tree getPrevious(int X, Tree T)
 		}
 	}
 	return prev;
+}
+//#14 & #15
+int Max(int A, int B)
+{
+    if (A > B) return A;
+    return B;
+}
+
+int getHeight(Tree T)
+{
+    if (T == NULL) return -1;
+        else
+        {
+            if (T->Left == NULL && T->Right == NULL) return 0;
+            else return 1 + Max(getHeight(T->Left), getHeight(T->Right));
+        }
+}
+
+int hNode(int X, Tree T)
+{
+    return getHeight(searchNode(X, T));
 }
 
 int main()
