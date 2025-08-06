@@ -9,4 +9,5 @@ $$ |  $$\          $$ |           $$ |         $$  /           $$  /
  \______/          \__|         \______|      \__/            \__/      
  ```
 
-*Btw, I'm not doing AVL Tree because I'm lazy, that's it.*
+*I'm cooked. 🙏 💀:*
+
