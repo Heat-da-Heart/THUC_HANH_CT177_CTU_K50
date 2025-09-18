@@ -73,4 +73,3 @@ CẤU TRÚC DANH SÁCH LIÊN KẾT LÀ MỘT CẤU TRÚC KHÓ VÌ KHI CÀI ĐẶ
 CÁC HÀM CÓ THAM SỐ List* THỰC CHẤT LÀ TA ĐANG MUỐN TRUYỀN ĐỊA CHỈ CỦA MỘT CON TRỎ VỚI MỤC ĐÍCH LÀ THAY ĐỔI ĐƯỢC CON TRỎ ĐÓ.
 // TA XEM NHƯ CON TRỎ NHƯ MỘT ĐỐI TƯỢNG, MUỐN THAY ĐỔI ĐỐI TƯỢNG ĐÓ TRONG HÀM THÌ TA PHẢI TRUYỀN THAM CHIẾU CỦA NÓ.
 
-Có thể những nhận xét trên của tôi có những sai sót hoặc không đúng, tôi rất cảm kích những ý kiến đóng góp từ người xem qua mail: natney444@gmail.com
