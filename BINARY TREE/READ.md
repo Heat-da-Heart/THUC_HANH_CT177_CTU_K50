@@ -1,5 +1,4 @@
 # CÂY NHỊ PHÂN
-## BÀI TẬP
 ### CHO TRƯỚC CẤU TRÚC CÂY ĐƯỢC ĐỊNH NGHĨA NHƯ SAU:
 
 ```C
